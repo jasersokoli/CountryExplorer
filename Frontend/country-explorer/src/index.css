@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.countries-list-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.countries-list-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.countries-list-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.countries-list-container th, 
+.countries-list-container td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.countries-list-container th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.countries-list-container tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.countries-list-container a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+.countries-list-container a:hover {
+  text-decoration: underline;
+}
+
+.countries-list-container tr:hover {
+  background-color: #f1f1f1;
+}
+
+.countries-list-container thead th {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 2;
+}
+
+.country-details-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.country-details-container h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.country-details-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.country-details-container p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #555;
+}
+
+.country-details-container p strong {
+  color: #333;
+}
+
+.country-details-container a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #1a73e8;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.country-details-container a:hover {
+  background-color: #1558b0;
+}
+
+.country-details-container a {
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.country-details-container a:hover {
+  transform: translateY(-2px);
+}
+
+
+@media (max-width: 600px) {
+  .countries-list-container table {
+      font-size: 0.9rem;
+  }
+  .country-details-container {
+    padding: 10px;
+  }
+
+  .country-details-container h1 {
+      font-size: 2rem;
+  }
+
+  .country-details-container p {
+      font-size: 1rem;
+  }
+}

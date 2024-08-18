@@ -1,0 +1,11 @@
+# Set text files to use LF line endings
+* text=auto
+*.c text
+*.cpp text
+*.h text
+*.java text
+*.py text
+
+# Set binary files to use CRLF line endings
+*.bat eol=crlf
+*.sh eol=lf
